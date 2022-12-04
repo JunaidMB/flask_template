@@ -33,7 +33,7 @@ def flask_template():
     # run.py
     run_py = open("./run.py", "w")
 
-    text_list = ['from app import app\n', '\n', 'if __name__ == "main":\n', '  app.run(host="0.0.0.0")']
+    text_list = ['from app import app\n', '\n', 'if __name__ == "__main__":\n', '  app.run(host="0.0.0.0")']
 
     run_py.writelines(text_list)
     run_py.close()
